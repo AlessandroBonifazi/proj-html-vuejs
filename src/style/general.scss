@@ -4,3 +4,35 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+// Utilities
+.ab-h50 {
+    height: 50px;
+}
+
+.ab-h80 {
+    height: 80px;
+}
+
+.ab-h100 {
+    height: 100px;
+}
+
+.ab-h120 {
+    height: 120px;
+}
+
+.ab-h150 {
+    height: 150px;
+}
+
+.ab-h200 {
+    height: 200px;
+}
+
+// Reset 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
