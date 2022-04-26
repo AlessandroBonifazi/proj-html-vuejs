@@ -9,26 +9,26 @@
       <div class="col-5 d-flex justify-content-end">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Active</a>
+            <a class="nav-link" aria-current="page" href="#">{{ link1 }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">{{ link2 }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">{{ link3 }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Disabled</a>
+            <a class="nav-link">{{ link4 }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Active</a>
+            <a class="nav-link" aria-current="page" href="#">{{ link5 }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Active</a>
+            <a class="nav-link" aria-current="page" href="#">{{ link6 }}</a>
           </li>
         </ul>
         <!-- Menu -->
-        <div>
+        <div class="ab-h23">
           <img src="@/assets/svg/svg-1.svg" alt="menu-button" />
         </div>
       </div>
@@ -40,7 +40,12 @@
 export default {
   name: "HeaderComponent",
   props: {
-    msg: String,
+    link1: String,
+    link2: String,
+    link3: String,
+    link4: String,
+    link5: String,
+    link6: String,
   },
 };
 </script>

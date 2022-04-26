@@ -1,6 +1,14 @@
 <template>
   <div id="app">
-    <Header msg="Welcome to Your Vue.js App" />
+    <Header
+      link1="HOME"
+      link2="PAGES"
+      link3="PORTFOLIO"
+      link4="BLOG"
+      link5="SHOP"
+      link6="ELEMENTS"
+    />
+    <Banner />
     <Main />
     <Footer />
   </div>
@@ -8,6 +16,7 @@
 
 <script>
 import Header from "./components/Header.vue";
+import Banner from "./components/Banner.vue";
 import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
 
@@ -15,6 +24,7 @@ export default {
   name: "App",
   components: {
     Header,
+    Banner,
     Main,
     Footer,
   },
