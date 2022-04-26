@@ -1,10 +1,14 @@
 <template>
-  <h1>{{ msg }}</h1>
+  <Products />
 </template>
 
 <script>
+import Products from "./Products.vue";
 export default {
   name: "MainComponent",
+  components: {
+    Products,
+  },
   props: {
     msg: String,
   },
