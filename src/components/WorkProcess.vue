@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid">
-    <div class="row">
+  <div class="container-fluid mt-5">
+    <div class="row mt-5">
       <!-- section title -->
       <div class="col-12 text-center">
         <h1>Working <em>process</em></h1>
@@ -9,35 +9,25 @@
 
     <div class="row">
       <div class="col-8 offset-2 ab-line-bg d-flex justify-content-around">
-        <!-- card -->
         <!-- frame -->
         <div class="frame d-flex align-items-center justify-content-center">
-          <font-awesome-icon icon="fa-solid fa-lightbulb" />
+          <font-awesome-icon icon="fa-solid fa-lightbulb" class="ab-icons" />
         </div>
 
-        <!-- card -->
-        <!-- <div class="ab-card d-flex flex-column align-items-center"> -->
         <!-- frame -->
         <div class="frame d-flex align-items-center justify-content-center">
-          <font-awesome-icon icon="fa-regular fa-comment" />
+          <font-awesome-icon icon="fa-regular fa-comment" class="ab-icons" />
         </div>
-        <!-- </div> -->
 
-        <!-- card -->
-        <!-- <div class="ab-card d-flex flex-column align-items-center"> -->
         <!-- frame -->
         <div class="frame d-flex align-items-center justify-content-center">
-          <font-awesome-icon icon="fa-solid fa-cloud" />
+          <font-awesome-icon icon="fa-solid fa-cloud" class="ab-icons" />
         </div>
-        <!-- </div> -->
 
-        <!-- card -->
-        <!-- <div class="ab-card d-flex flex-column align-items-center"> -->
         <!-- frame -->
         <div class="frame d-flex align-items-center justify-content-center">
-          <font-awesome-icon icon="fa-solid fa-pencil" />
+          <font-awesome-icon icon="fa-solid fa-pencil" class="ab-icons" />
         </div>
-        <!-- </div> -->
       </div>
     </div>
 
@@ -50,6 +40,7 @@
           <!-- text -->
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
+
         <!-- card -->
         <div class="ab-card d-flex flex-column align-items-center">
           <!-- card title -->
@@ -85,6 +76,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+h1 {
+  font-size: 80px;
+}
 .ab-line-bg {
   background-image: url("@/assets/svg/svg-3.svg");
   background-repeat: no-repeat;
@@ -104,5 +98,8 @@ export default {
   width: 150px;
   border-radius: 50%;
   background-color: #faf7f1;
+  .ab-icons {
+    height: 30px;
+  }
 }
 </style>
