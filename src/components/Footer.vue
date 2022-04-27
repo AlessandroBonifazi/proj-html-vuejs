@@ -1,13 +1,10 @@
 <template>
-  <h1>prova</h1>
+  <h1>footer</h1>
 </template>
 
 <script>
 export default {
   name: "FooterComponent",
-  props: {
-    msg: String,
-  },
 };
 </script>
 

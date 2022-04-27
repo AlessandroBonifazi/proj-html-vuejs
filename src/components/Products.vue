@@ -29,9 +29,6 @@
 <script>
 export default {
   name: "ProductsComponent",
-  props: {
-    msg: String,
-  },
 };
 </script>
 
