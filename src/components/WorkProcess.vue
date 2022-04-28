@@ -115,7 +115,7 @@ h1 {
   border-radius: 50%;
   background-color: #faf7f1;
   .ab-icons {
-    height: 30px;
+    height: 40px;
   }
   .icon-1 {
     color: $icon-color1;

@@ -11,7 +11,9 @@
           text-center
         "
       >
-        <h1>Want to work with us? Send us <strong>a message!</strong></h1>
+        <h1>
+          Want to work with us? Send us <strong><em>a message!</em></strong>
+        </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
           nulla dolor voluptatum delectus alias dolorem ipsa laudantium eum
@@ -31,6 +33,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/style/variables.scss";
+
 .ab-contact-bg {
   background-image: url("@/assets/img/h-2-background-1.jpg");
   background-size: contain;
@@ -40,7 +44,17 @@ export default {
     margin-bottom: 30px;
   }
   p {
-    font-size: 35px;
+    color: $p-color;
+    font-size: 23px;
+  }
+  .ab-btn {
+    border: 4px solid $bg-color1;
+    background-color: $bg-color1;
+  }
+  .ab-btn:hover {
+    color: black;
+    border: 4px solid $bg-color1;
+    background-color: white;
   }
 }
 </style>
