@@ -2,7 +2,7 @@
   <div class="container-fluid my-5">
     <div class="row ab-h550 d-flex justify-content-center my-5">
       <!-- arrow slide -->
-      <div class="col-1 d-flex justify-content-end align-items-center">
+      <div class="col-1 d-flex justify-content-end align-items-center mx-3">
         <button @click="slideLeft()" class="ab-arrow">
           <font-awesome-icon id="arrow-left" icon="fa-solid fa-angle-left" />
         </button>
@@ -70,7 +70,7 @@
       </div>
 
       <!-- arrow slide -->
-      <div class="col-1 d-flex align-items-center">
+      <div class="col-1 d-flex align-items-center mx-3">
         <button @click="slideRight()" class="ab-arrow">
           <font-awesome-icon id="arrow-left" icon="fa-solid fa-angle-right" />
         </button>
@@ -78,10 +78,22 @@
     </div>
 
     <div class="row d-flex justify-content-center">
-      <div class="col-1 d-flex">
+      <div v-if="bannerID === 0" class="col-1 d-flex align-items-center">
+        <span class="dot active"></span>
         <span class="dot"></span>
         <span class="dot"></span>
+      </div>
+
+      <div v-if="bannerID === 1" class="col-1 d-flex align-items-center">
         <span class="dot"></span>
+        <span class="dot active"></span>
+        <span class="dot"></span>
+      </div>
+
+      <div v-if="bannerID === 2" class="col-1 d-flex align-items-center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot active"></span>
       </div>
     </div>
   </div>
@@ -103,7 +115,7 @@ export default {
   methods: {
     slideLeft() {
       if (this.bannerID === 0) {
-        return this.bannerID;
+        return (this.bannerID = 2);
       } else {
         let activeID = this.bannerID;
         this.bannerID = this.bannerID - 1;
@@ -112,7 +124,7 @@ export default {
     },
     slideRight() {
       if (this.bannerID === 2) {
-        return this.bannerID;
+        return (this.bannerID = 0);
       } else {
         let activeID = this.bannerID;
         this.bannerID = this.bannerID + 1;
@@ -129,12 +141,16 @@ export default {
   width: 50px;
   border: none;
   border-radius: 50%;
-  font-size: 20px;
-  transition: 0.6s ease;
-  background-color: white;
+  font-size: 28px;
+  transition: 0.5s ease;
+  color: white;
+  background-color: #e1c0b0;
 }
 .ab-arrow:hover {
-  background-color: rgba(0, 0, 0, 0.103);
+  border: 3px solid black;
+}
+.ab-transition {
+  transition: 0.5s ease;
 }
 .dot {
   cursor: pointer;
@@ -143,6 +159,11 @@ export default {
   margin: 0 5px;
   background-color: #e1c0b0;
   border-radius: 50%;
+}
+.active {
+  height: 18px;
+  width: 18px;
+  border: 1px solid black;
 }
 h1 {
   font-size: 70px;

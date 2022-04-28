@@ -39,7 +39,7 @@
 
           <!-- date -->
           <div class="date">
-            <div class="day">07</div>
+            <div class="day">13</div>
             <div class="year">MAY '19</div>
           </div>
 
@@ -65,7 +65,7 @@
 
           <!-- date -->
           <div class="date">
-            <div class="day">07</div>
+            <div class="day">21</div>
             <div class="year">MAY '19</div>
           </div>
 
