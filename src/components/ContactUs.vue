@@ -33,6 +33,7 @@ export default {
 <style scoped lang="scss">
 .ab-contact-bg {
   background-image: url("@/assets/img/h-2-background-1.jpg");
+  background-size: contain;
   padding: 80px;
   h1 {
     font-size: 80px;
