@@ -20,6 +20,7 @@
         </p>
         <button class="ab-btn">READ MORE</button>
       </div>
+      <!-- imgs -->
       <div v-if="bannerID === 0" class="col-4 position-relative">
         <img src="@/assets/img/h-2-slider-img-15.png" alt="slider-img1" />
         <img src="@/assets/img/h-2-slider-img-16.png" alt="slider-img1" />
@@ -39,6 +40,7 @@
         </p>
         <button class="ab-btn">READ MORE</button>
       </div>
+      <!-- imgs -->
       <div
         v-if="bannerID === 1"
         class="col-4 d-flex justify-content-center position-relative"
@@ -63,6 +65,7 @@
         </p>
         <button class="ab-btn">READ MORE</button>
       </div>
+      <!-- imgs -->
       <div v-if="bannerID === 2" class="col-4 position-relative">
         <img src="@/assets/img/h-2-slider-img-11.png" alt="slider-img1" />
 
@@ -77,6 +80,7 @@
       </div>
     </div>
 
+    <!-- slide dots -->
     <div class="row d-flex justify-content-center">
       <div v-if="bannerID === 0" class="col-1 d-flex align-items-center">
         <span class="dot active"></span>

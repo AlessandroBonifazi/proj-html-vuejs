@@ -51,6 +51,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.nav-item {
+  border: 5px solid white;
+}
 .nav-item:hover {
   border-bottom: 5px solid #f0cebe;
 }
