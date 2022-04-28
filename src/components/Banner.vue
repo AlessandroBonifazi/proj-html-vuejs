@@ -20,9 +20,11 @@
         </p>
         <button class="ab-btn">READ MORE</button>
       </div>
-      <div v-if="bannerID === 0" class="col-4">
+      <div v-if="bannerID === 0" class="col-4 position-relative">
         <img src="@/assets/img/h-2-slider-img-15.png" alt="slider-img1" />
         <img src="@/assets/img/h-2-slider-img-16.png" alt="slider-img1" />
+
+        <BannerDecorationComponent />
       </div>
 
       <!-- Slide -->
@@ -37,11 +39,16 @@
         </p>
         <button class="ab-btn">READ MORE</button>
       </div>
-      <div v-if="bannerID === 1" class="col-4">
+      <div
+        v-if="bannerID === 1"
+        class="col-4 d-flex justify-content-center position-relative"
+      >
         <img
           src="@/assets/img/short-slider-rev-1-img-3.png"
           alt="slider-img1"
         />
+
+        <BannerDecorationComponent />
       </div>
 
       <!-- Slide -->
@@ -56,8 +63,10 @@
         </p>
         <button class="ab-btn">READ MORE</button>
       </div>
-      <div v-if="bannerID === 2" class="col-4">
+      <div v-if="bannerID === 2" class="col-4 position-relative">
         <img src="@/assets/img/h-2-slider-img-11.png" alt="slider-img1" />
+
+        <BannerDecorationComponent />
       </div>
 
       <!-- arrow slide -->
@@ -67,12 +76,25 @@
         </button>
       </div>
     </div>
+
+    <div class="row d-flex justify-content-center">
+      <div class="col-1 d-flex">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import BannerDecorationComponent from "./BannerDecoration.vue";
+
 export default {
   name: "BannerComponent",
+  components: {
+    BannerDecorationComponent,
+  },
   data() {
     return {
       bannerID: 0,
@@ -107,6 +129,19 @@ export default {
   width: 50px;
   border: none;
   border-radius: 50%;
+  font-size: 20px;
+  transition: 0.6s ease;
+  background-color: white;
+}
+.ab-arrow:hover {
   background-color: rgba(0, 0, 0, 0.103);
+}
+.dot {
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  margin: 0 5px;
+  background-color: #e1c0b0;
+  border-radius: 50%;
 }
 </style>
