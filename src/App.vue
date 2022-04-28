@@ -10,7 +10,7 @@
     />
     <Banner />
     <Main />
-    <Footer />
+    <Footer :email="email" :phone="phone" :address="address" :city="city" />
   </div>
 </template>
 
@@ -27,6 +27,14 @@ export default {
     Banner,
     Main,
     Footer,
+  },
+  data() {
+    return {
+      email: "maree.qode@gmail.com",
+      phone: "+44645 321 789",
+      address: "Avenue d'Auderghem 10",
+      city: "1040 Brussels, Belgium",
+    };
   },
 };
 </script>
