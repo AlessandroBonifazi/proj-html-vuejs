@@ -15,8 +15,11 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faPinterestP } from '@fortawesome/free-brands-svg-icons'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons'
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faUserSecret, faLightbulb, faComment, faCloud, faPencil, faTwitter, faPinterestP, faFacebookF, faLinkedinIn)
+
+library.add(faUserSecret, faLightbulb, faComment, faCloud, faPencil, faTwitter, faPinterestP, faFacebookF, faLinkedinIn, faAngleLeft, faAngleRight)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false

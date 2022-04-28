@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid mt-5">
+  <div class="container-fluid my-5">
     <div class="row mt-5">
       <!-- section title -->
       <div class="col-12 text-center">
@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row mb-5">
       <div class="col-8 offset-2 d-flex justify-content-around">
         <!-- card -->
         <div class="ab-card d-flex flex-column align-items-center">

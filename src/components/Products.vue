@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid my-5">
-    <div class="row">
+    <div class="row mt-5">
       <div class="col-4 p-0 m-0">
         <img src="@/assets/img/h-2-port-img-1.jpg" alt="product-img-1" />
       </div>
@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row mb-5">
       <div class="col-4 p-0 m-0">
         <img src="@/assets/img/h-2-port-img-4.jpg" alt="product-img-4" />
       </div>
