@@ -13,7 +13,7 @@
         v-if="bannerID === 0"
         class="col-3 d-flex flex-column justify-content-center"
       >
-        <h1>Devotion that never ends</h1>
+        <h1>Devotion that never <em>ends</em></h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
           perspiciatis. Modi aliquam nisi deleniti rerum?
@@ -56,7 +56,7 @@
         v-if="bannerID === 2"
         class="col-3 d-flex flex-column justify-content-center"
       >
-        <h1>We love our work</h1>
+        <h1>We love our <em>work</em></h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
           perspiciatis. Modi aliquam nisi deleniti rerum?
@@ -143,5 +143,12 @@ export default {
   margin: 0 5px;
   background-color: #e1c0b0;
   border-radius: 50%;
+}
+h1 {
+  font-size: 70px;
+  font-weight: 600;
+}
+p {
+  font-size: 18px;
 }
 </style>
