@@ -11,22 +11,31 @@
       <div class="col-8 offset-2 ab-line-bg d-flex justify-content-around">
         <!-- frame -->
         <div class="frame d-flex align-items-center justify-content-center">
-          <font-awesome-icon icon="fa-solid fa-lightbulb" class="ab-icons" />
+          <font-awesome-icon
+            icon="fa-solid fa-lightbulb"
+            class="ab-icons icon-1"
+          />
         </div>
 
         <!-- frame -->
         <div class="frame d-flex align-items-center justify-content-center">
-          <font-awesome-icon icon="fa-regular fa-comment" class="ab-icons" />
+          <font-awesome-icon
+            icon="fa-regular fa-comment"
+            class="ab-icons icon-2"
+          />
         </div>
 
         <!-- frame -->
         <div class="frame d-flex align-items-center justify-content-center">
-          <font-awesome-icon icon="fa-solid fa-cloud" class="ab-icons" />
+          <font-awesome-icon icon="fa-solid fa-cloud" class="ab-icons icon-3" />
         </div>
 
         <!-- frame -->
         <div class="frame d-flex align-items-center justify-content-center">
-          <font-awesome-icon icon="fa-solid fa-pencil" class="ab-icons" />
+          <font-awesome-icon
+            icon="fa-solid fa-pencil"
+            class="ab-icons icon-4"
+          />
         </div>
       </div>
     </div>
@@ -76,6 +85,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/style/variables.scss";
+
 h1 {
   font-size: 80px;
 }
@@ -91,6 +102,11 @@ h1 {
   text-align: center;
   h3 {
     font-size: 25px;
+    font-weight: 600;
+  }
+  p {
+    color: $p-color;
+    font-size: 18px;
   }
 }
 .frame {
@@ -100,6 +116,18 @@ h1 {
   background-color: #faf7f1;
   .ab-icons {
     height: 30px;
+  }
+  .icon-1 {
+    color: $icon-color1;
+  }
+  .icon-2 {
+    color: $icon-color2;
+  }
+  .icon-3 {
+    color: $icon-color3;
+  }
+  .icon-4 {
+    color: $icon-color4;
   }
 }
 </style>
