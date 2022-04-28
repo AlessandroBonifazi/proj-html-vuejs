@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid my-5">
-    <div class="row ab-h500 d-flex justify-content-center my-5">
+    <div class="row ab-h550 d-flex justify-content-center my-5">
       <!-- arrow slide -->
       <div class="col-1 d-flex justify-content-end align-items-center">
         <button @click="slideLeft()" class="ab-arrow">
@@ -9,13 +9,16 @@
       </div>
 
       <!-- Slide -->
-      <div v-if="bannerID === 0" class="col-4 d-flex flex-column">
+      <div
+        v-if="bannerID === 0"
+        class="col-3 d-flex flex-column justify-content-center"
+      >
         <h1>Devotion that never ends</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
           perspiciatis. Modi aliquam nisi deleniti rerum?
         </p>
-        <button class="w-25">READ MORE</button>
+        <button class="ab-btn">READ MORE</button>
       </div>
       <div v-if="bannerID === 0" class="col-4">
         <img src="@/assets/img/h-2-slider-img-15.png" alt="slider-img1" />
@@ -23,13 +26,16 @@
       </div>
 
       <!-- Slide -->
-      <div v-if="bannerID === 1" class="col-4 d-flex flex-column">
-        <h1></h1>
+      <div
+        v-if="bannerID === 1"
+        class="col-3 d-flex flex-column justify-content-center"
+      >
+        <h1>Get inspired</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
           perspiciatis. Modi aliquam nisi deleniti rerum?
         </p>
-        <button class="w-25">READ MORE</button>
+        <button class="ab-btn">READ MORE</button>
       </div>
       <div v-if="bannerID === 1" class="col-4">
         <img
@@ -39,13 +45,16 @@
       </div>
 
       <!-- Slide -->
-      <div v-if="bannerID === 2" class="col-4 d-flex flex-column">
-        <h1>dajeeee</h1>
+      <div
+        v-if="bannerID === 2"
+        class="col-3 d-flex flex-column justify-content-center"
+      >
+        <h1>We love our work</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
           perspiciatis. Modi aliquam nisi deleniti rerum?
         </p>
-        <button class="w-25">READ MORE</button>
+        <button class="ab-btn">READ MORE</button>
       </div>
       <div v-if="bannerID === 2" class="col-4">
         <img src="@/assets/img/h-2-slider-img-11.png" alt="slider-img1" />
@@ -93,4 +102,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.ab-arrow {
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.103);
+}
 </style>
