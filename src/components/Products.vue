@@ -1,6 +1,7 @@
 <template>
   <div class="container-fluid my-5">
     <div class="row mt-5">
+      <!-- product -->
       <div class="col-4 position-relative imgHover p-0 m-0">
         <img src="@/assets/img/h-2-port-img-1.jpg" alt="product-img-1" />
         <div class="description">
@@ -8,6 +9,8 @@
           <p><em>Illustration</em></p>
         </div>
       </div>
+
+      <!-- product -->
       <div class="col-4 position-relative imgHover p-0 m-0">
         <img src="@/assets/img/h-2-port-img-2.jpg" alt="product-img-2" />
         <div class="description">
@@ -15,6 +18,8 @@
           <p><em>Illustration</em></p>
         </div>
       </div>
+
+      <!-- product -->
       <div class="col-4 position-relative imgHover p-0 m-0">
         <img src="@/assets/img/h-2-port-img-3.jpg" alt="product-img-3" />
         <div class="description">
@@ -25,6 +30,7 @@
     </div>
 
     <div class="row mb-5">
+      <!-- product -->
       <div class="col-4 position-relative imgHover p-0 m-0">
         <img src="@/assets/img/h-2-port-img-4.jpg" alt="product-img-4" />
         <div class="description">
@@ -32,6 +38,8 @@
           <p><em>Illustration</em></p>
         </div>
       </div>
+
+      <!-- product -->
       <div class="col-4 position-relative imgHover p-0 m-0">
         <img src="@/assets/img/h-2-port-img-5.jpg" alt="product-img-5" />
         <div class="description">
@@ -39,6 +47,8 @@
           <p><em>Illustration</em></p>
         </div>
       </div>
+
+      <!-- product -->
       <div class="col-4 position-relative imgHover p-0 m-0">
         <img src="@/assets/img/h-2-port-img-6.jpg" alt="product-img-6" />
         <div class="description">
