@@ -2,12 +2,12 @@
   <div class="container-fluid">
     <div class="row ab-h100 d-flex justify-content-between align-items-center">
       <!-- Logo -->
-      <div class="col-1">
+      <div class="col-1 mx-3">
         <img src="@/assets/img/logo-sidearea-1.png" alt="logo-header" />
       </div>
       <!-- Nav -->
       <div class="col-5 d-flex justify-content-end">
-        <ul class="nav">
+        <ul class="nav mx-5">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">{{ link1 }}</a>
           </li>
@@ -18,7 +18,7 @@
             <a class="nav-link" href="#">{{ link3 }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">{{ link4 }}</a>
+            <a class="nav-link" href="#">{{ link4 }}</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">{{ link5 }}</a>
@@ -51,4 +51,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.nav-item:hover {
+  border-bottom: 5px solid #f0cebe;
+}
 </style>
