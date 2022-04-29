@@ -11,7 +11,13 @@
       <!-- Slide -->
       <div
         v-if="bannerID === 0"
-        class="col-3 d-flex flex-column justify-content-center"
+        class="
+          col-3
+          d-flex
+          flex-column
+          justify-content-center
+          slide-in-right slide-in-left
+        "
       >
         <h1>Devotion that never <em>ends</em></h1>
         <p>
@@ -31,7 +37,13 @@
       <!-- Slide -->
       <div
         v-if="bannerID === 1"
-        class="col-3 d-flex flex-column justify-content-center"
+        class="
+          col-3
+          d-flex
+          flex-column
+          justify-content-center
+          slide-in-right slide-in-left
+        "
       >
         <h1>Get inspired</h1>
         <p>
@@ -56,7 +68,13 @@
       <!-- Slide -->
       <div
         v-if="bannerID === 2"
-        class="col-3 d-flex flex-column justify-content-center"
+        class="
+          col-3
+          d-flex
+          flex-column
+          justify-content-center
+          slide-in-right slide-in-left
+        "
       >
         <h1>We love our <em>work</em></h1>
         <p>
@@ -140,6 +158,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/style/animation.scss";
+
 .ab-arrow {
   height: 50px;
   width: 50px;
@@ -153,9 +173,7 @@ export default {
 .ab-arrow:hover {
   border: 3px solid black;
 }
-.ab-transition {
-  transition: 0.5s ease;
-}
+
 .dot {
   cursor: pointer;
   height: 14px;
