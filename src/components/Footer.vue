@@ -21,21 +21,26 @@
 
       <!-- social -->
       <div class="col-2 d-flex flex-column align-items-start">
-        <span>Stay in touch with us</span>
+        <span class="mx-3">Stay in touch with us</span>
         <div class="social w-50 mt-2 d-flex justify-content-between">
-          <font-awesome-icon class="social-icon" icon="fa-brands fa-twitter" />
-          <font-awesome-icon
-            class="social-icon"
-            icon="fa-brands fa-pinterest-p"
-          />
-          <font-awesome-icon
-            class="social-icon"
-            icon="fa-brands fa-facebook-f"
-          />
-          <font-awesome-icon
-            class="social-icon"
-            icon="fa-brands fa-linkedin-in"
-          />
+          <a href="#"
+            ><font-awesome-icon class="social-icon" icon="fa-brands fa-twitter"
+          /></a>
+          <a href="#"
+            ><font-awesome-icon
+              class="social-icon"
+              icon="fa-brands fa-pinterest-p"
+          /></a>
+          <a href="#"
+            ><font-awesome-icon
+              class="social-icon"
+              icon="fa-brands fa-facebook-f"
+          /></a>
+          <a href="#"
+            ><font-awesome-icon
+              class="social-icon"
+              icon="fa-brands fa-linkedin-in"
+          /></a>
         </div>
       </div>
     </div>

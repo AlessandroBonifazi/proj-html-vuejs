@@ -2,7 +2,7 @@
   <div class="container-fluid my-5">
     <div class="row ab-h550 d-flex justify-content-center my-5">
       <!-- arrow slide -->
-      <div class="col-1 d-flex justify-content-end align-items-center mx-3">
+      <div class="col-1 d-flex justify-content-center align-items-center mx-3">
         <button @click="slideLeft()" class="ab-arrow">
           <font-awesome-icon id="arrow-left" icon="fa-solid fa-angle-left" />
         </button>
@@ -73,7 +73,7 @@
       </div>
 
       <!-- arrow slide -->
-      <div class="col-1 d-flex align-items-center mx-3">
+      <div class="col-1 d-flex justify-content-center align-items-center mx-3">
         <button @click="slideRight()" class="ab-arrow">
           <font-awesome-icon id="arrow-left" icon="fa-solid fa-angle-right" />
         </button>
@@ -160,7 +160,7 @@ export default {
   cursor: pointer;
   height: 14px;
   width: 14px;
-  margin: 0 5px;
+  margin: 0 15px;
   background-color: #e1c0b0;
   border-radius: 50%;
 }

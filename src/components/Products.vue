@@ -22,6 +22,17 @@
       <!-- product -->
       <div class="col-4 position-relative imgHover p-0 m-0">
         <img src="@/assets/img/h-2-port-img-3.jpg" alt="product-img-3" />
+
+        <!-- shop icons -->
+        <div class="shop d-flex flex-column">
+          <div class="shop-icon d-flex my-1">
+            <a href="#"><img src="@/assets/svg/svg-7.svg" alt="svg-7" /></a>
+          </div>
+          <div class="shop-icon d-flex my-1">
+            <a href="#"><img src="@/assets/svg/svg-6.svg" alt="svg-6" /></a>
+          </div>
+        </div>
+
         <div class="description">
           <h3>Illustration of novels</h3>
           <p><em>Illustration</em></p>
@@ -82,5 +93,17 @@ export default {
 }
 img {
   width: 100%;
+}
+.shop {
+  position: absolute;
+  top: 150px;
+  right: 0%;
+  .shop-icon {
+    background-color: white;
+    padding: 5px;
+    img {
+      height: 30px;
+    }
+  }
 }
 </style>
